@@ -1,5 +1,6 @@
 let property = document.querySelector(".group")
 console.log(property)
+console.log("done")
 property.addEventListener("click", (e) => {
     let dropdown = document.querySelector(".dropdown")
     if (dropdown.classList.contains("hidden")) {
