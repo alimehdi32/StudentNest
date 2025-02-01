@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <div class="h-14 bg-blue-900 w"></div>
+    <div class="nav">
+        <nav class="bg-blue-600 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+              <!-- Logo -->
+              <a href="/" class="text-white text-2xl font-bold">
+                <span class="text-yellow-300">Student</span>Nest
+              </a>
+              <!-- Links -->
+              <ul class="hidden md:flex space-x-4 text-white">
+                <li><a href="/" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+              </ul>
+              <!-- Dropdown Menu for Properties -->
+              <div class="relative group hidden md:block right-6">
+                <button class="text-white hover:text-yellow-300 focus:outline-none">Properties</button>
+                <div class="dropdown absolute hidden group-hover:block bg-white text-blue-600 mt-2 rounded shadow-lg w-48">
+                  <a href="/rentals" class="block px-4 py-2 hover:bg-blue-600 hover:text-white">Rental Flats</a>
+                  <a href="/pg" class="block px-4 py-2 hover:bg-blue-600 hover:text-white">Paying Guest</a>
+                  <a href="/hostels" class="block px-4 py-2 hover:bg-blue-600 hover:text-white">Hostels</a>
+                </div>
+              </div>
+              <!-- Hamburger Icon for Mobile -->
+              <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </nav>
+        
+          <!-- Mobile Menu -->
+          <div class="md:hidden">
+            <ul class="bg-blue-600 text-white space-y-2 p-4">
+              <li><a href="/" class="block hover:text-yellow-300">Home</a></li>
+              <li><a href="#about" class="block hover:text-yellow-300">About</a></li>
+              <li><a href="#contact" class="block hover:text-yellow-300">Contact</a></li>
+              <li>
+                <a href="#" class="block hover:text-yellow-300">Properties</a>
+                <ul class="pl-4 mt-2 space-y-1">
+                  <li><a href="/rentals" class="block hover:text-yellow-300">Rental Flats</a></li>
+                  <li><a href="/pg" class="block hover:text-yellow-300">Paying Guest</a></li>
+                  <li><a href="/hostels" class="block hover:text-yellow-300">Hostels</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </div>
+   <script src="script.js"></script>
 </body>
 </html>
