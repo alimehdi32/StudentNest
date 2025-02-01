@@ -794,9 +794,6 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .h-screen {
     height: 100vh;
   }
@@ -808,9 +805,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1466,9 +1460,6 @@
   }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
-  }
-  .bg-blue-900 {
-    background-color: var(--color-blue-900);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
