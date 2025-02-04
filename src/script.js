@@ -9,3 +9,18 @@ property.addEventListener("click", (e) => {
         dropdown.classList.add("hidden");
     }
 })
+function placeholder() {
+    let loc = ["batla house", "zakir nagar", "okhla vihar", "Jasola", "Shaheen Bagh", "Abul Fazal enclave", "New Friends Colony", "Taimoor Nagar", "Tikona Park"]
+    let random = Math.floor(0 + Math.random()*9)
+    return loc[random]
+}
+
+    let input = document.querySelector(".input")
+    setInterval(() => {
+        input.placeholder = placeholder()
+        console.log(placeholder())
+    }, 3000);
+   
+        
+    
+
