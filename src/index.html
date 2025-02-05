@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-neutral-900">
+    <div class="nav">
+        <nav class="bg-gray-800 p-4 max-h-16 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-white text-2xl font-bold">
+                    <span class="text-yellow-300">Student</span>Nest
+                </div>
+                <!-- Links -->
+                <ul class="hidden md:flex space-x-4 text-white">
+                    <li><a href="/" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+                </ul>
+                <div class="flex justify-center h-10 m-0 p-0 w-44">
+                    <a href="/login"
+                        class="hover:text-yellow-300 text-white font-normal transition-transform duration-300 hover:scale-110">LogIN</a>
+                    <div class="text-white mx-2">/</div>
+                    <a href="/signup"
+                        class="hover:text-yellow-300 text-white font-normal transition-transform duration-300 hover:scale-110">SignUP</a>
+                </div>
+                <!-- Dropdown Menu for Properties -->
+                <div class="relative hidden group md:block">
+                    <button
+                        class="text-white hover:text-yellow-300 focus:outline-none cursor-pointer">Properties</button>
+                    <div
+                        class="dropdown absolute hidden group-hover:block bg-white text-blue-600 mt-2 rounded shadow-lg w-48 right-4">
+                        <a href="/rentals"
+                            class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer">Rental Flats</a>
+                        <a href="/pg" class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer">Paying
+                            Guest</a>
+                        <a href="/hostels"
+                            class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer">Hostels</a>
+                    </div>
+                </div>
+                <!-- Hamburger Icon for Mobile -->
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <ul class="bg-gray-800 text-white space-y-2 p-4">
+                <li><a href="/" class="block hover:text-yellow-300">Home</a></li>
+                <li><a href="#about" class="block hover:text-yellow-300">About</a></li>
+                <li><a href="#contact" class="block hover:text-yellow-300">Contact</a></li>
+                <li>
+                    <a href="#" class="block hover:text-yellow-300">Properties</a>
+                    <ul class="pl-4 mt-2 space-y-1">
+                        <li><a href="/rentals" class="block hover:text-yellow-300">Rental Flats</a></li>
+                        <li><a href="/pg" class="block hover:text-yellow-300">Paying Guest</a></li>
+                        <li><a href="/hostels" class="block hover:text-yellow-300">Hostels</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="parent-div bg-blue-800 h-16 flex justify-evenly items-center shadow-md">
+        <div class="tofind text-center text-4xl text-white font-medium">Rental Flats</div>
+    </div>
+
+    <div class="maincontent mt-11">
+        <a href="./">
+            <div
+                class="h-52 border-2 border-gray-300 bg-gray-700 py-1.5 pl-0.5 rounded-3xl mt-3 flex shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="h-48 w-80 rounded-3xl overflow-hidden">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/420249720.jpg?k=5746852ea6c7983d3ef574658bd110fe0d10884b18a38901792151749ed00e58&o=&hp=1"
+                        alt="Hotel Image" class="w-full h-full object-cover rounded-l-3xl">
+                </div>
+                <div class="info ml-4 text-gray-200">
+                    <p class="text-2xl font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id,
+                        provident quasi veniam aut nemo minima impedit reprehenderit harum sit nam, earum quos
+                        perferendis nesciunt!</p>
+                    <div class="rent flex items-center gap-2 mt-5 font-semibold text-2xl">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>12,000/ monthly</p>
+                    </div>
+                    <div class="location flex items-center gap-2 text-2xl mt-8">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Street 17, Zakirnagar, Okhla, New Delhi</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./">
+            <div
+                class="h-52 border-2 border-gray-300 bg-gray-700 py-1.5 pl-0.5 rounded-3xl mt-3 flex shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="h-48 w-80 rounded-3xl overflow-hidden">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/420249720.jpg?k=5746852ea6c7983d3ef574658bd110fe0d10884b18a38901792151749ed00e58&o=&hp=1"
+                        alt="Hotel Image" class="w-full h-full object-cover rounded-l-3xl">
+                </div>
+                <div class="info ml-4 text-gray-200">
+                    <p class="text-2xl font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id,
+                        provident quasi veniam aut nemo minima impedit reprehenderit harum sit nam, earum quos
+                        perferendis nesciunt!</p>
+                    <div class="rent flex items-center gap-2 mt-5 font-semibold text-2xl">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>12,000/ monthly</p>
+                    </div>
+                    <div class="location flex items-center gap-2 text-2xl mt-8">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Street 17, Zakirnagar, Okhla, New Delhi</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
