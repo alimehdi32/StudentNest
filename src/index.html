@@ -6,25 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-neutral-900">
+<body class="bg-white">
     <div class="nav">
-        <nav class="bg-gray-800 p-4 max-h-16 shadow-lg">
+        <nav class="bg-black p-4 max-h-16 shadow-lg">
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo -->
                 <div class="text-white text-2xl font-bold">
                     <span class="text-yellow-300">Student</span>Nest
                 </div>
-                <!-- Links -->
-                <ul class="hidden md:flex space-x-4 text-white">
-                    <li><a href="/" class="hover:text-yellow-300">Home</a></li>
-                    <li><a href="#about" class="hover:text-yellow-300">About</a></li>
-                    <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
-                </ul>
+                <div class="mx-auto flex justify-evenly w-80 items-center">
+
+                    <!-- Links -->
+                    <div class="relative z-10 hidden group md:block">
+                        <button
+                            class="text-white text-2xl font-semibold hover:text-yellow-300 focus:outline-none cursor-pointer ">Tenants</button>
+                        <div
+                            class="dropdown absolute hidden group-hover:block bg-white text-blue-600 mt-2 rounded-4xl shadow-lg w-48">
+                            <a href="rental.html"
+                                class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer text-2xl font-black font-serif">Rental
+                                Flats</a>
+                            <a href="pg.html"
+                                class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer text-2xl font-black font-serif">Paying
+                                Guest</a>
+                            <a href="hostels.html"
+                                class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer text-2xl font-black font-serif">Hostels</a>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 hidden group md:block">
+                        <button
+                            class="text-white text-2xl font-semibold hover:text-yellow-300 focus:outline-none cursor-pointer">Owner</button>
+                        <div
+                            class="dropdown absolute hidden group-hover:block bg-white text-blue-600 mt-2 rounded-4xl shadow-lg w-48">
+                            <a href="rental.html"
+                                class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer text-2xl font-black font-serif">Post
+                                vacancy</a>
+                            <a href="pg.html"
+                                class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer text-2xl font-black font-serif">Owner
+                                services</a>
+                            <a href="hostels.html"
+                                class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer text-2xl font-black font-serif">Hostels</a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="flex justify-center h-10 m-0 p-0 w-44">
                     <a href="/login"
                         class="hover:text-yellow-300 text-white font-normal transition-transform duration-300 hover:scale-110">LogIN</a>
@@ -33,19 +65,7 @@
                         class="hover:text-yellow-300 text-white font-normal transition-transform duration-300 hover:scale-110">SignUP</a>
                 </div>
                 <!-- Dropdown Menu for Properties -->
-                <div class="relative hidden group md:block">
-                    <button
-                        class="text-white hover:text-yellow-300 focus:outline-none cursor-pointer">Properties</button>
-                    <div
-                        class="dropdown absolute hidden group-hover:block bg-white text-blue-600 mt-2 rounded shadow-lg w-48 right-4">
-                        <a href="/rentals"
-                            class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer">Rental Flats</a>
-                        <a href="/pg" class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer">Paying
-                            Guest</a>
-                        <a href="/hostels"
-                            class="block px-4 py-2 hover:bg-gray-800 hover:text-white cursor-pointer">Hostels</a>
-                    </div>
-                </div>
+
                 <!-- Hamburger Icon for Mobile -->
                 <div class="md:hidden">
                     <button class="text-white focus:outline-none">
@@ -76,58 +96,40 @@
             </ul>
         </div>
     </div>
+    <div class="image flex overflow-scroll hide-scrollbar absolute z-0">
 
-    <div class="parent-div bg-blue-800 h-16 flex justify-evenly items-center shadow-md">
-        <div class="tofind text-center text-4xl text-white font-medium">Rental Flats</div>
+        <img src="https://images.nobroker.in/images/8a9f8b039240e28a019241350b530f01/8a9f8b039240e28a019241350b530f01_596937_397588_medium.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/37876505e5a82f5e5f97b2e75e396f72/v0/medium/3_bhk_apartment-for-sale-sukhdev_vihar-New+Delhi-living_room.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/14ce75edb56deed31b9db35bda44cb96/v0/medium/3_bhk_apartment-for-sale-sukhdev_vihar-New+Delhi-attached_balcony_with_living_room.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/800810a31bb6ac50d0731921ec2f16d1/v0/medium/3_bhk_apartment-for-sale-sukhdev_vihar-New+Delhi-dining_area.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/e5d4a7bec6fe8183df38f2fb3e1f6a9e/v0/medium/4_bhk_independent_builder_floor-for-sale-sukhdev_vihar-New+Delhi-hall.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/e2452460e5d0c3ee688260a0e21f541e/v0/medium/4_bhk_independent_builder_floor-for-sale-sukhdev_vihar-New+Delhi-bathroom.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/9b06377996437accdf6b9fd1effdf388/v0/medium/4_bhk_independent_builder_floor-for-sale-sukhdev_vihar-New+Delhi-kitchen.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/52ebc66ce5b8ad230b3b3e330516ee45/v0/medium/8_bhk_independent_house-for-sale-sukhdev_vihar-New+Delhi-hall.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/8708135c506a8b9decd71fcdc4681af7/v0/medium/4_bhk_independent_builder_floor-for-sale-sukhdev_vihar-New+Delhi-hall.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/c6efa5caf286cace626380804f0878fa/v0/medium/2_bhk_apartment-for-sale-jamia_nagar-New+Delhi-living_room.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
+        <img src="https://housing-images.n7net.in/01c16c28/4d9cf53ab6f9150b19c39ab9f4846724/v0/medium/3_bhk_apartment-for-sale-jamia_nagar-New+Delhi-living_room.jpg"
+            alt="" loading="lazy" class="w-80 h-72 transform transition hover:scale-105">
     </div>
 
-    <div class="maincontent mt-11">
-        <a href="./">
-            <div
-                class="h-52 border-2 border-gray-300 bg-gray-700 py-1.5 pl-0.5 rounded-3xl mt-3 flex shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div class="h-48 w-80 rounded-3xl overflow-hidden">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/420249720.jpg?k=5746852ea6c7983d3ef574658bd110fe0d10884b18a38901792151749ed00e58&o=&hp=1"
-                        alt="Hotel Image" class="w-full h-full object-cover rounded-l-3xl">
-                </div>
-                <div class="info ml-4 text-gray-200">
-                    <p class="text-2xl font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id,
-                        provident quasi veniam aut nemo minima impedit reprehenderit harum sit nam, earum quos
-                        perferendis nesciunt!</p>
-                    <div class="rent flex items-center gap-2 mt-5 font-semibold text-2xl">
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <p>12,000/ monthly</p>
-                    </div>
-                    <div class="location flex items-center gap-2 text-2xl mt-8">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Street 17, Zakirnagar, Okhla, New Delhi</p>
-                    </div>
-                </div>
-            </div>
-        </a>
+    <div class="search h-20 w-[400px] pl-11 pt-6 rounded-3xl absolute z-20 top-80 left-[550px] bg-slate-100">
 
-        <a href="./">
-            <div
-                class="h-52 border-2 border-gray-300 bg-gray-700 py-1.5 pl-0.5 rounded-3xl mt-3 flex shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div class="h-48 w-80 rounded-3xl overflow-hidden">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/420249720.jpg?k=5746852ea6c7983d3ef574658bd110fe0d10884b18a38901792151749ed00e58&o=&hp=1"
-                        alt="Hotel Image" class="w-full h-full object-cover rounded-l-3xl">
-                </div>
-                <div class="info ml-4 text-gray-200">
-                    <p class="text-2xl font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id,
-                        provident quasi veniam aut nemo minima impedit reprehenderit harum sit nam, earum quos
-                        perferendis nesciunt!</p>
-                    <div class="rent flex items-center gap-2 mt-5 font-semibold text-2xl">
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <p>12,000/ monthly</p>
-                    </div>
-                    <div class="location flex items-center gap-2 text-2xl mt-8">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Street 17, Zakirnagar, Okhla, New Delhi</p>
-                    </div>
-                </div>
-            </div>
-        </a>
+        <input type="text" name="email" placeholder="batla house" class="input focus:outline-none focus:ring-0">
+        <button type="submit" class="search ml-28 cursor-pointer">search</button>
+
     </div>
+
+
     <script src="script.js"></script>
 </body>
 
